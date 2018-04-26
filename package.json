@@ -1,0 +1,14 @@
+{
+  "name": "dimigo-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ChalkPE/dimigo-app",
+  "author": "Chalk",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.8.4"
+  },
+  "dependencies": {
+    "dimibob": "git://github.com/dimigoin/node-dimibob.git"
+  }
+}
