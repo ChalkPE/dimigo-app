@@ -9,6 +9,10 @@
     "electron": "^1.8.4"
   },
   "dependencies": {
-    "dimibob": "git://github.com/dimigoin/node-dimibob.git"
+    "dimibob": "git://github.com/dimigoin/node-dimibob.git",
+    "ms": "^2.1.1"
+  },
+  "scripts": {
+    "start": "electron main.js"
   }
 }
