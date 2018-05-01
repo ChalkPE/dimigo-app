@@ -5,8 +5,8 @@ app.on('ready', function () {
   const menu = require('./src/menu')
   const worker = require('./src/worker')
 
-  app.dock.hide()
   worker(tray, menu)
+  if (app.dock) app.dock.hide()
 })
 
 app.on('window-all-closed', () => void 0)
