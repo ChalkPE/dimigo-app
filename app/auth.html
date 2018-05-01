@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>로그인</title>
+  </head>
+
+  <body>
+    <label for="id">디미고 계정 아이디</label>
+    <br>
+    <input type="text" id="id">
+    <br>
+
+    <label for="pwd">디미고 계정 비밀번호</label>
+    <br>
+    <input type="password" id="pwd">
+    <br>
+
+    <br>
+    <button id="submit">로그인</button>
+    <script>
+      const jwt = require('jsonwebtoken')
+      const life = require('../src/life')
+      const store = require('../src/store')
+
+      submit.addEventListener('click', function submit () {
+        const username = document.getElementById('id').value
+        const password = document.getElementById('pwd').value
+
+        life.getToken(username, password)
+          .then(token => {
+            store.set('token', token)
+            store.set('me', jwt.decode(token))
+            window.close()
+          })
+      })
+    </script>
+  </body>
+</html>

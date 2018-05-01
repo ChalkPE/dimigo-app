@@ -9,7 +9,10 @@
     "electron": "^1.8.4"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "dimibob": "git://github.com/dimigoin/node-dimibob.git",
+    "electron-store": "^1.3.0",
+    "jsonwebtoken": "^8.2.1",
     "ms": "^2.1.1"
   },
   "scripts": {

@@ -8,3 +8,5 @@ app.on('ready', function () {
   app.dock.hide()
   worker(tray, menu)
 })
+
+app.on('window-all-closed', () => void 0)
